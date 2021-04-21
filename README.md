@@ -1,6 +1,5 @@
 # masscan.js
 This is an implementation of the core Masscan scanning algorithm in JavaScript/NodeJS.
-
 The core scanning algorithm is what makes Masscan unique from other scanners, so it's worth highlighting separately in a sample program.
 * REVIEW OF SCANNERS
 The most famous port-scanner is "nmap". However, it is a "host-at-a-time" scanner, and struggles at scanning large networks. 
