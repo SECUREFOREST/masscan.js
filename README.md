@@ -35,7 +35,7 @@ node patent.js 10.0.0.0-10.0.0.5 192.168.0.0/31 80,U:161
 --> 10.0.0.3 tcp:80
 What you see first is the target ranges being echoed back that it scans, first the IP address ranges, followed by the port ranges. The port ranges are in weird decimal-dot notation because they share the same code as for IPv4 addresses.
 Then we see the randomized output, where individual probes are sent to a random IP address and port. 
-* TransmitThread. 
+* TransmitThread  
 All the majic happens in the "TransmitThread()" function near the bottom of this file.
 We first see how the index variable 'i' is incremented from 0 to the total number of packets that will be sent. We then see how first this index is permuted to 'xXx', then this variable is separated into one index for the IP address and another index for the port. Then, those indexes are used to enumerate one of the IP addresses and one of the ports.
 * Blackrock  
